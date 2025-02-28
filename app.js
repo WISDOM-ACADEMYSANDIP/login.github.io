@@ -41,7 +41,7 @@ const handleLogin = async () => {
     return;
   }
 
-  const response = await fetch("YOUR_GOOGLE_APPS_SCRIPT_URL", {
+  const response = await fetch("https://script.google.com/macros/s/AKfycbwspbT1qrf60vTesJajirnJ_d95KA59M1Pvn04jFZ6XZavvG4HrfKsl3vpxEZ5-0qNa/exec", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ action: "login", username, password }),
